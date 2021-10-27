@@ -6,6 +6,6 @@ edition = "2018"
 
 [dependencies]
 fugue = { version = "0.2", registry = "fugue" }
-fugue-static = { version = "0.2", registry = "fugue" }
-fuguex = { version = "0.2", registry = "fugue" }
+fugue-static = { version = "0.1", registry = "fugue" }
+fuguex = { version = "0.2", registry = "fugue", features = ["concrete", "loader-all"] }
 thiserror = "1"
