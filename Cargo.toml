@@ -1,0 +1,11 @@
+[package]
+name = "fugue-typex"
+authors = ["Sam Thomas <st@xv.ax>"]
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+fugue = { version = "0.2", registry = "fugue" }
+fugue-static = { version = "0.2", registry = "fugue" }
+fuguex = { version = "0.2", registry = "fugue" }
+thiserror = "1"
