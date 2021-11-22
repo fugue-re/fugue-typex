@@ -5,7 +5,13 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
+intervals = { version = "0.1", registry = "fugue" }
 fugue = { version = "0.2", registry = "fugue" }
-fugue-static = { version = "0.1", registry = "fugue" }
-fuguex = { version = "0.2", registry = "fugue", features = ["concrete", "loader-all"] }
+fugue-static = { version = "0.2", registry = "fugue" }
+fuguex = { version = "0.2", registry = "fugue", features = ["concrete", "loader-idapro"] }
+rand = { version = "0.8", features = ["small_rng"] }
 thiserror = "1"
+
+[[bin]]
+name = "simple1"
+path = "src/simple1.rs"
